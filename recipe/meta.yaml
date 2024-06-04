@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - nestml = pynestml.frontend.pynestml_frontend:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -39,6 +39,7 @@ requirements:
     - libboost-devel 
     - cmake 
     - make
+    - pygsl
 
 test:
   imports:
