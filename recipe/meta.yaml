@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   entry_points:
     - nestml = pynestml.frontend.pynestml_frontend:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -23,9 +23,9 @@ requirements:
   run:
     - python >=3 
     - numpy >=1.8.2
-    - sympy
+    - sympy <1.11
     - scipy
-    - antlr4-python3-runtime ==4.13
+    - antlr4-python3-runtime ==4.13.1
     - setuptools
     - jinja2 >=2.10
     - typing 
