@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 3
   entry_points:
     - nestml = pynestml.frontend.pynestml_frontend:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
