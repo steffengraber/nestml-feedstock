@@ -1,17 +1,17 @@
 {% set name = "nestml" %}
-{% set version = "7.0.2" %}
+{% set version = "8.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/nest/nestml/archive/v{{ version }}.tar.gz
-  sha256: d2cc7b119b2b2eda98ac1b148d4e947f77fef2fdce563ff829b7d7185ce81be3
+  url: https://github.com/nest/nestml/archive/v{{ version }}-rc1.tar.gz
+  sha256: 53f07d75720467c9fd316961eea3ebe488f7e22a609e211921dcd531eab061ab
 
 build:
   noarch: python
-  number: 5
+  number: 0
   entry_points:
     - nestml = pynestml.frontend.pynestml_frontend:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
