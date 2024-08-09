@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/nest/nestml/archive/v{{ version }}-rc1.tar.gz
-  sha256: 53f07d75720467c9fd316961eea3ebe488f7e22a609e211921dcd531eab061ab
+  url: https://github.com/nest/nestml/archive/v{{ version }}-rc2.tar.gz
+  sha256: f066988d89e2cb1763beffa2f39bd13dec766c2e7e8551b0a312e365bb72466c
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - nestml = pynestml.frontend.pynestml_frontend:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
