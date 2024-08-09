@@ -1,6 +1,16 @@
 github:
   branch_name: main
   tooling_branch_name: main
+azure:
+  store_build_artifacts: true
+conda_build_tool:
+  mambabuild
 conda_build:
   error_overlinking: true
+  pkg_format: '2'
 conda_forge_output_validation: true
+github:
+  branch_name: main
+  tooling_branch_name: main
+test: native_and_emulated
+  
